@@ -1,0 +1,94 @@
+body {
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    box-sizing: border-box;
+    color: white;
+    padding: 0 10px;
+    position: absolute;
+    text-align: end;
+    width: 100%;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    margin: 3em auto;
+    padding: 1em;
+    text-align: center;
+    width: 500px;
+}
+
+.about {
+    font-family: sans-serif;
+}
+
+.about p {
+    font-style: italic;
+    line-height: 0.5;
+}
+
+.background-image {
+    background-image: url('/images/background.png');
+    background-size: cover;
+    filter: blur(5px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.inline {
+    display: inline;
+}
+
+.link {
+    color: white;
+    opacity: 0.8;
+    padding: 0 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.main-photo {
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.5s;
+    width: 150px;
+}
+
+.main-photo:hover {
+    width: 200px;
+}
+
+.main-title {
+    text-shadow: 2px 2px 5px black;
+}
+
+.trybe-color{
+    color: #0fa36b;
+}
+
+#about-div {
+    display: inline-block;
+}
+
+#habilidades {
+    font-family: monospace;
+    font-size: 1.1em;
+    font-style: normal;
+    padding: 1em;
+}
