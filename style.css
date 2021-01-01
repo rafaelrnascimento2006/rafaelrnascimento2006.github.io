@@ -1,23 +1,26 @@
-body{
+body {
     align-content: center;
     text-align: center;
     background-color: #F2FFFC;
     background-image: url(img/bg.jpg);
     font-size: 133%;
 }
-ul{
+ul {
     
 }
-.trybe-color{
+.margin-auto {
+    margin: auto;
+}
+.trybe-color {
     color: #0fa36b;
 }
-#nomeRafa{;
+#nomeRafa {;
     font-family: 'Ubuntu', sans-serif;
 }
-#fotoRafa{
+#fotoRafa {
     border: .2em solid #000;
     border-radius: 50%;
 }
-#sobreMim{
+#sobreMim {
     font-family: monospace;
 }
