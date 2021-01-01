@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(253 , 251 , 251);
+  margin: 0;
+}
+
+main {
+  font-size: 1.1em;
+  line-height: 1.2;
+  padding: 60px 10px 0;
+}
+
+td {
+  padding: 20px;
+}
+
+.lado-direito {
+  float: right;
+}
+
+.lado-esquerdo {
+  float: left;
+}
+
+#aprendizados {
+  border: 1px dashed black;
+  margin: 20px;
+  padding: 10px;
+  width: 40%;
+}
+
+#artigo {
+  border: 1px dashed black;
+  margin: 20px;
+  padding: 10px;
+  width: 50%;
+}
+
+#cabecalho {
+  background-color: rgb(15 , 163 , 107);
+  font-family: monospace;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#licoes h2 {
+  color: rgb(15 , 163 , 107);
+}
+
+#minha_foto {
+  border: 3px solid rgb(253 , 251 , 251);
+  border-radius: 50%;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  width: 100px;
+}
+
+#rodape {
+  background-color: rgb(15 , 163 , 107);
+  bottom: 0;
+  font-weight: 900;
+  height: 2em;
+  position: fixed;
+  text-align: right;
+  width: 100%;
+}
+
+#titulo {
+  color: rgb(253 , 251 , 251);
+  text-align: center;
+}
+
+#rodape a {
+  color: rgb(253 , 251 , 251);
+  margin: 1em;
+}
