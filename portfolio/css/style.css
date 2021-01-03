@@ -67,8 +67,10 @@ main {
     text-shadow: 2px 2px 5px black;
 }
 
-.trybe-color{
+.trybe{
     color: #0fa36b;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 #about-div {
