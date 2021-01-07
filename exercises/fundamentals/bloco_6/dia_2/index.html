@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/pikaday.css">
+  <link rel="stylesheet" href="css/validation.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <script src="scripts/validation.min.js"></script>
+  <title>Formulário de currículo</title>
+</head>
+
+<body>
+  <header class="section">
+    <h1 class="title has-text-centered">Formulário de currículo</h1>
+  </header>
+
+  <form>
+    <div class="section" id="dados-pessoais">
+      <h2 class="subtitle has-text-centered">Dados pessoais</h2>
+
+      <div class="field">
+        <label class="label" for="full-name">Nome</label>
+        <div class="control">
+          <input class="input" type="text" name="Nome" id="full-name" maxlength="40" placeholder="informe o seu nome" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="e-mail">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input validate" data-validate="required,email" type="email" name="Email" id="email" class="email-input" maxlength="50" placeholder="informe o seu e-mail" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="cpf">CPF</label>
+        <div class="control">
+          <input class="input" type="text" name="CPF" id="cpf" maxlength="11" placeholder="informe o seu CPF" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="address">Endereço</label>
+        <div class="control">
+          <input class="input" type="text" name="Endereco" id="address" maxlength="200" placeholder="informe o seu endereço" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="city">Cidade</label>
+        <div class="control">
+          <input class="input" type="text" name="Cidade" id="city" maxlength="28" placeholder="informe a sua cidade" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="state">Estado</label>
+        <div class="control">
+          <div class="select">
+            <select name="Estado" id="state" required></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="radio" for="house">
+            <input type="radio" name="Tipo" id="house" value="casa" checked>
+            Casa
+          </label>
+          <label class="radio" for="flat">
+            <input type="radio" name="Tipo" id="flat" value="apartamento">
+            Apartamento
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section" id="dados-do-ultimo-emprego">
+      <h2 class="subtitle has-text-centered">Dados do seu último emprego</h2>
+
+      <div class="field">
+        <label class="label" for="curriculum">Resumo do currículo</label>
+        <div class="control">
+          <textarea class="textarea" name="Resumo do currículo" id="curriculum" class="legacy-form-row" maxlength="1000" required></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label"  for="ocupation">Cargo</label>
+        <div class="control">
+          <input class="input" type="text" name="Cargo" id="job-ocupation" maxlength="40" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label"  for="jog-description">Descrição do cargo</label>
+        <div class="control">
+          <input class="input" type="text" name="Descrição do cargo" id="job-description" maxlength="500" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="label"  for="starting-day">Data de início</label>
+          <input class="input" type="text" name="Data de início" id="datepicker" class="date-input" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <button class="button is-success" id="submit" type="submit">Enviar</button>
+      <button class="button is-danger" id="clear" type="reset">Limpar</button>
+    </div>
+  </form>
+
+  <div class="section form-data"></div>
+
+  <script src="scripts/pikaday.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
