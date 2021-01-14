@@ -1,8 +1,10 @@
 body {
-  background-image: linear-gradient(to bottom, #fefefe, #d3d4e8);
+  background-image: linear-gradient(to bottom, white, #dfe3ee);
+  color: #2d2d2d;
   font-family: sans-serif;
-  height: 100vh;
   margin: 0;
+  min-height: 100vh;
+  min-width: 1200px;
   padding: 0;
 }
 
@@ -11,7 +13,7 @@ form input {
 }
 
 header {
-  background-color: rgb(66, 103, 178);
+  background-color: #4267b2;
   margin: 0;
   padding: 10px 0;
 }
@@ -27,12 +29,8 @@ header {
   font-weight: 700;
 }
 
-.facebook-logo {
-  height: 50px;
-}
-
 .form {
-  color: #858991;
+  color: gray;
 }
 
 .form-control {
@@ -40,11 +38,19 @@ header {
   font-weight: 700;
 }
 
-.form-control button {
-  background-color: #3e61a8;
-  border: 1px solid #34518b;
+.form-control-button {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  border-radius: 0.2em;
   color: white;
-  height: 21px;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  transition: 0.3s;
+}
+
+.form-control-button:hover {
+  background-color: #4267b2;
+  border: 1px solid #8b9dc3;
 }
 
 .form-group {
@@ -53,32 +59,45 @@ header {
   margin: 0 10px;
 }
 
-.form-group input {
+.form-group-input {
+  border: 1px solid #4267b2;
   margin: 5px 0;
+  opacity: 0.9;
+  padding: 0.2em;
+  transition: 0.3s;
   width: 150px;
+}
+
+.form-group-input:hover {
+  border: 1px solid #8b9dc3;
+  opacity: 1;
 }
 
 .hidden-input {
   display: none;
-  width: 100%;
+  width: 95%;
 }
 
 .left-content {
   width: 800px;
 }
 
+.left-content img {
+  width: 537px;
+}
+
 .left-content p {
-  color: #123455;
+  color: #123456;
   font-weight: 700;
-  margin: 0;
+  margin: 1em 0;
   width: 300px;
 }
 
 .main-content {
   align-items: baseline;
   display: flex;
-  margin: 0 auto;
-  width: 1100px;
+  margin: 1em auto;
+  width: fit-content;
 }
 
 .radio-container {
@@ -89,9 +108,16 @@ header {
 .radio-container label {
   color: #2d2d2d;
   margin: 0 1em 0 0.2em;
+  opacity: 0.8;
+}
+
+.radio-container label:hover {
+  opacity: 1;
 }
 
 .right-content {
+  display: flex;
+  flex-flow: column;
   width: 300px;
 }
 
@@ -102,15 +128,16 @@ header {
   width: 100%;
 }
 
-.right-content form input {
-  border: 1px solid gray;
+.right-content input {
+  border: 1px solid #8b9dc3;
   border-radius: 0.3em;
   margin: 0.5em 0;
   padding: 0.5em;
+  transition: 0.3s;
 }
 
-.right-content p , .right-content .title {
-  color: #2d2d2d;
+.right-content input:hover {
+  border: 1px solid #3b5998;
 }
 
 .small-input {
@@ -118,17 +145,22 @@ header {
 }
 
 .submitButton {
-  background-color: #5b9d4e;
+  background-color: #2ea043;
   border: none;
   border-radius: 0.3em;
   color: white;
   font-weight: 700;
   margin: 1em 0;
-  padding: 0.5em 2em;
+  padding: 0.8em 2em;
+  transition: 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #6cc644;
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
+  background-color: #4267b2;
   color: white;
   display: flex;
   justify-content: space-between;
