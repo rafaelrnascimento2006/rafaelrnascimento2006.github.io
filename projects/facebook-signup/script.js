@@ -39,13 +39,22 @@ genderCustom.addEventListener('click', showHiddenInput);
 function createWelcomeParagraph() {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerText = `
-  Olá, ${document.querySelector('#firstname').value} ${document.querySelector('#lastname').value}
-  ${document.querySelector('#phone_email').value}
-  ${document.querySelector('#birthdate').value}
-  ${checkRadio()}`;
+  Olá, ${document.querySelector('#firstname').value} ${document.querySelector('#lastname').value}!
+  Celular ou email: ${document.querySelector('#phone_email').value}
+  Data de nascimento: ${document.querySelector('#birthdate').value}
+  Gênero: ${checkRadio()}`;
 }
 
 window.onload = function () {
+  const rightContent = document.querySelector('.right-content');
+  const facebookLogin = document.querySelector('.facebook-login');
+  const createAccountButton = document.querySelector('.form-control-submit ');
+  createAccountButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    facebookLogin.style.display = 'none';
+    rightContent.style.display = 'flex';
+  });
+
   const submitButton = document.querySelector('#facebook-register');
   const errorMessage = document.querySelector('#errorMessage');
   submitButton.addEventListener('click', (event) => {
